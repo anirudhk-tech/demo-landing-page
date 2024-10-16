@@ -9,7 +9,7 @@ import { Review } from "./components/review.jsx";
 import { Award } from "./components/award.jsx";
 import { Product } from "./components/product.jsx";
 import { useState } from "react";
-import { Button, Dialog, DialogTitle } from "@mui/material";
+import { Button, Dialog, DialogTitle, Typography } from "@mui/material";
 import { Connect } from '../../../server/web3/auth.js';
 import { Trusted } from './components/trusted.jsx';
 import Nature from '../public/images/Image13.jpg';
@@ -20,6 +20,10 @@ import Trusted1 from '../public/images/Image18.png';
 import Trusted2 from '../public/images/Image17.png';
 import Trusted3 from '../public/images/Image20.png';
 import Trusted4 from '../public/images/Image19.png';
+import Insta from '../public/images/insta.png';
+import X from '../public/images/x.png';
+import Tiktok from '../public/images/tiktok.png';
+import Image from "next/image.js";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -32,16 +36,16 @@ export default function Home() {
   const praiseOpacity = useTransform(scrollYProgress, [0.25, 0.3, 0.55, 0.60], [0, 1, 1, 0]);
   const review = useTransform(scrollYProgress, [0.35, 0.5], [0, 1]);
   const reviewRotate = useTransform(scrollYProgress, [0.4, 0.5], [0, 360]);
-  const xAward1Progress = useTransform(scrollYProgress, [0.50, 0.55, 0.70, 0.75], ['0vw', '40vw', '40vw', '0vw']);
-  const xAward1SentenceProgress = useTransform(scrollYProgress, [0.50, 0.55, 0.70, 0.75], ['0', '-80vw', '-80vw', '0vw']);
-  const xAward2Progress = useTransform(scrollYProgress, [0.55, 0.60, 0.70, 0.75], ['0vw', '40vw', '40vw', '0vw']);
-  const xAward2SentenceProgress = useTransform(scrollYProgress, [0.55, 0.60, 0.70, 0.75], ['0vw', '-80vw', '-80vw', '0vw']);
-  const xAward3Progress = useTransform(scrollYProgress, [0.60, 0.65, 0.70, 0.75], ['0vw', '40vw', '40vw', '0vw']);
-  const xAward3SentenceProgress = useTransform(scrollYProgress, [0.60, 0.65, 0.70, 0.75], ['0vw', '-80vw', '-80vw', '0vw']);
-  const xCircle1Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '40vw']);
-  const xCircle2Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '15vw']);
-  const xCircle3Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '-10vw']);
-  const xCircle4Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '-35vw']);
+  const xAward1Progress = useTransform(scrollYProgress, [0.55, 0.65, 0.75, 0.80], ['0vw', '40vw', '40vw', '0vw']);
+  const xAward1SentenceProgress = useTransform(scrollYProgress, [0.55, 0.65, 0.75, 0.80], ['0', '-80vw', '-80vw', '0vw']);
+  const xAward2Progress = useTransform(scrollYProgress, [0.60, 0.65, 0.75, 0.80], ['0vw', '40vw', '40vw', '0vw']);
+  const xAward2SentenceProgress = useTransform(scrollYProgress, [0.60, 0.65, 0.75, 0.80], ['0vw', '-80vw', '-80vw', '0vw']);
+  const xAward3Progress = useTransform(scrollYProgress, [0.64, 0.67, 0.75, 0.80], ['0vw', '40vw', '40vw', '0vw']);
+  const xAward3SentenceProgress = useTransform(scrollYProgress, [0.64, 0.67, 0.75, 0.80], ['0vw', '-80vw', '-80vw', '0vw']);
+  const xCircle1Progress = useTransform(scrollYProgress, [0.85, 0.90], ['0vw', '40vw']);
+  const xCircle2Progress = useTransform(scrollYProgress, [0.85, 0.90], ['0vw', '15vw']);
+  const xCircle3Progress = useTransform(scrollYProgress, [0.85, 0.90], ['0vw', '-10vw']);
+  const xCircle4Progress = useTransform(scrollYProgress, [0.85, 0.90], ['0vw', '-35vw']);
   const widthFooterLineProgress = useTransform(scrollYProgress, [0.97, 1.00], ['0vw', '100vw']);
 
   return (
@@ -60,8 +64,8 @@ export default function Home() {
         <NavBar/>
       </DialogContext.Provider>
       <div className="main-title-and-subtitle">
-        <text className="main-title">Meta Market</text>
-        <text className="sub-title">Find quality AI art in our vast collection (or submit your own!)</text>
+        <Typography className="main-title">Meta Market</Typography>
+        <Typography className="sub-title">Find quality AI art in our vast collection (or submit your own!)</Typography>
       </div>
       <motion.div className="image-row-container">
         <MovingRow x={xImageRowProgress} opacity={imagesOpacity} number={1}/>
@@ -80,7 +84,7 @@ export default function Home() {
         <Award trophyX={xAward3Progress} awardX={xAward3SentenceProgress} award={"Highest Customer Satisfaction"} />
       </div>
       <div className="trusted-by-container">
-        <text className="trusted-by-title">Trusted By</text>
+        <Typography className="trusted-by-title">Trusted By</Typography>
         <div className="trusted-by-circle-container">
           <Trusted x={xCircle1Progress} bgImage={Trusted1}/>
           <Trusted x={xCircle2Progress} bgImage={Trusted2}/>
@@ -88,7 +92,7 @@ export default function Home() {
           <Trusted x={xCircle4Progress} bgImage={Trusted4}/>
         </div>
       </div>
-      <text className="product-title">Maybe You'll Find Something You Like</text>
+      <Typography className="product-title">Maybe You'll Find Something You Like</Typography>
       <div className="products-container">
         <Product title="Nature Scenery" bgImage={Nature}/>
         <Product title="Cute Pictures" bgImage={Cute}/>
@@ -102,19 +106,46 @@ export default function Home() {
           width: widthFooterLineProgress
         }}
         ></motion.div>
-        <text className="footer-text">Contact: +1 000.000.000 | MetaMarket@somemail.com</text>
-        <text className="footer-text" style={{marginTop: '5vh'}}>
+        <Typography className="footer-text">Contact: +1 000.000.000 | MetaMarket@somemail.com</Typography>
+        <Typography className="footer-text" style={{marginTop: '5vh'}}>
           Mission: Our mission is to empower creativity by providing a seamless marketplace for AI-generated images. 
           We connect creators to a customer base with innovative AI tools, enabling artists, designers, and businesses to explore limitless possibilities. 
-          Customers can shop a diverse collection of AI-generated artwork, bringing their visions to life and be amazed.
-        </text>
-        <text className="footer-text" style={{ marginTop: '7vh' }}>About</text>
-        <motion.div className="link-line" animate={{x: '3vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
-        <text className="footer-text">Marketplace</text>
-        <motion.div className="link-line" animate={{x: '7vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
-        <text className="footer-text">Creator's Studio</text>
-        <motion.div className="link-line" animate={{x: '12vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
+          Customers can shop a diverse collection of AI-generated artwork, bringing their visions to life.
+        </Typography>
+        <div className="bottom-footer">
+          <div className="links-container">
+            <motion.text className="footer-text">About</motion.text>
+            <motion.div className="link-line" animate={{ x: '3vw' }} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
+            <motion.text className="footer-text">Marketplace</motion.text>
+            <motion.div className="link-line" animate={{ x: '7vw' }} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>        
+            <motion.text className="footer-text">Creator's Studio</motion.text>
+            <motion.div className="link-line" animate={{ x: '12vw' }} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
+          </div>
+          <div className="socials-container">
+            <motion.div
+            whileHover={{ scale: 1.3 }}
+            >
+              <Image 
+              src={Insta}
+              className="socials-image"/>
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.3 }}
+            >
+              <Image 
+              src={X}
+              className="socials-image"/>
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.3 }}
+            >
+              <Image 
+              src={Tiktok}
+              className="socials-image"/>
+            </motion.div>
+          </div>
+        </div>
       </div>
-    </div>  
+  </div>  
   );
 }

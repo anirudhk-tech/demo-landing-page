@@ -1,12 +1,12 @@
 export const reviews = [
     {
-        review: "The AI-generated pieces blew my mind! Each artwork feels like it was crafted by a master artist, yet the concept of a machine creating such beauty is fascinating. I spent hours browsing the gallery, and every piece has a unique character. Definitely the future of art!",
-        name: "Joe Moe",
+        review: "The integration of AI tools has streamlined the process of generating and selling my digital art, allowing me to focus on creativity rather than logistics. I’ve already made several sales, and I can’t wait to see how my business grows here!",
+        name: "Joe Moe | MetaMarket Image Creator",
         stars: 5,
     },
     {
-        review: "Absolutely mesmerizing! The AI-generated artwork at this gallery is beyond anything I've seen before. Each piece tells a story and evokes deep emotions. I can't wait to come back and explore more!",
-        name: "Emily Memily",
+        review: "I found the perfect piece to brighten my day. Highly recommend it for anyone looking for original digital art!",
+        name: "Emily Memily | Enthusiastic Customer",
         stars: 5,
     },
 ]

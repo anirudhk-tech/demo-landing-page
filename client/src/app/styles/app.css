@@ -1,6 +1,6 @@
 .fullview {
     width: 100vw;
-    height: 1300vh;
+    height: 1275vh;
     display: flex;
     flex-direction: column;
     scrollbar-width: thin;
@@ -48,6 +48,38 @@
     height: 1px;
     border: 1px solid white;
     margin-left: 1vw;
+}
+
+.links-conatiner {
+    flex: 1;
+    display: flex;
+}
+
+.socials-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+    gap: 2vw;
+}
+
+.socials-image {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 100vw;
+    margin-top: 5vh;
+    padding-bottom: 2vh;
 }
 
 .dialog {
