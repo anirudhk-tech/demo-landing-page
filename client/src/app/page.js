@@ -12,6 +12,14 @@ import { useState } from "react";
 import { Button, Dialog, DialogTitle } from "@mui/material";
 import { Connect } from '../../../server/web3/auth.js';
 import { Trusted } from './components/trusted.jsx';
+import Nature from '../public/images/Image13.jpg';
+import Cute from '../public/images/Image14.png';
+import City from '../public/images/Image15.png';
+import Abstract from '../public/images/Image16.png';
+import Trusted1 from '../public/images/Image18.png';
+import Trusted2 from '../public/images/Image17.png';
+import Trusted3 from '../public/images/Image20.png';
+import Trusted4 from '../public/images/Image19.png';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -30,10 +38,11 @@ export default function Home() {
   const xAward2SentenceProgress = useTransform(scrollYProgress, [0.55, 0.60, 0.70, 0.75], ['0vw', '-80vw', '-80vw', '0vw']);
   const xAward3Progress = useTransform(scrollYProgress, [0.60, 0.65, 0.70, 0.75], ['0vw', '40vw', '40vw', '0vw']);
   const xAward3SentenceProgress = useTransform(scrollYProgress, [0.60, 0.65, 0.70, 0.75], ['0vw', '-80vw', '-80vw', '0vw']);
-  const xCircle1Progress = useTransform(scrollYProgress, [0.76, 0.80], ['0vw', '35vw']);
-  const xCircle2Progress = useTransform(scrollYProgress, [0.76, 0.80], ['0vw', '10vw']);
-  const xCircle3Progress = useTransform(scrollYProgress, [0.76, 0.80], ['0vw', '-15vw']);
-  const xCircle4Progress = useTransform(scrollYProgress, [0.76, 0.80], ['0vw', '-40vw']);
+  const xCircle1Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '40vw']);
+  const xCircle2Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '15vw']);
+  const xCircle3Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '-10vw']);
+  const xCircle4Progress = useTransform(scrollYProgress, [0.80, 0.85], ['0vw', '-35vw']);
+  const widthFooterLineProgress = useTransform(scrollYProgress, [0.97, 1.00], ['0vw', '100vw']);
 
   return (
     <div className="fullview">
@@ -73,18 +82,38 @@ export default function Home() {
       <div className="trusted-by-container">
         <text className="trusted-by-title">Trusted By</text>
         <div className="trusted-by-circle-container">
-          <Trusted x={xCircle1Progress}/>
-          <Trusted x={xCircle2Progress}/>
-          <Trusted x={xCircle3Progress}/>
-          <Trusted x={xCircle4Progress}/>
+          <Trusted x={xCircle1Progress} bgImage={Trusted1}/>
+          <Trusted x={xCircle2Progress} bgImage={Trusted2}/>
+          <Trusted x={xCircle3Progress} bgImage={Trusted3}/>
+          <Trusted x={xCircle4Progress} bgImage={Trusted4}/>
         </div>
       </div>
       <text className="product-title">Maybe You'll Find Something You Like</text>
       <div className="products-container">
-        <Product title="Futuristic Art"/>
-        <Product title="Classics"/>
-        <Product title="Night City"/>
-        <Product title="Nature"/>
+        <Product title="Nature Scenery" bgImage={Nature}/>
+        <Product title="Cute Pictures" bgImage={Cute}/>
+        <Product title="Cityscapes" bgImage={City}/>
+        <Product title="Abstract Art" bgImage={Abstract}/>
+      </div>
+      <div className="footer">
+        <motion.div
+        className="footer-line"
+        style={{
+          width: widthFooterLineProgress
+        }}
+        ></motion.div>
+        <text className="footer-text">Contact: +1 000.000.000 | MetaMarket@somemail.com</text>
+        <text className="footer-text" style={{marginTop: '5vh'}}>
+          Mission: Our mission is to empower creativity by providing a seamless marketplace for AI-generated images. 
+          We connect creators to a customer base with innovative AI tools, enabling artists, designers, and businesses to explore limitless possibilities. 
+          Customers can shop a diverse collection of AI-generated artwork, bringing their visions to life and be amazed.
+        </text>
+        <text className="footer-text" style={{ marginTop: '7vh' }}>About</text>
+        <motion.div className="link-line" animate={{x: '3vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
+        <text className="footer-text">Marketplace</text>
+        <motion.div className="link-line" animate={{x: '7vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
+        <text className="footer-text">Creator's Studio</text>
+        <motion.div className="link-line" animate={{x: '12vw'}} transition={{duration: 2, repeat: Infinity, repeatType: 'reverse'}}></motion.div>
       </div>
     </div>  
   );

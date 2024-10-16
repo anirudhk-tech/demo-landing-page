@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const Trusted = ({ x }) => {
+export const Trusted = ({ x, bgImage }) => {
     return (
         <motion.div 
         animate={{
@@ -12,7 +12,10 @@ export const Trusted = ({ x }) => {
             repeatType: 'reverse',
         }}
         style={{
-            x
+            x,
+            backgroundImage: `url(${bgImage?.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
         }}
         className="trusted-by-circle">
 

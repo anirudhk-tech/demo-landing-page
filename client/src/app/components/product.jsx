@@ -2,7 +2,7 @@ import { duration } from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-export const Product = ({ title, desc }) => {
+export const Product = ({ title, bgImage }) => {
     const [hover, setHover] = useState(false);
 
     return (
@@ -23,6 +23,11 @@ export const Product = ({ title, desc }) => {
             >
                 <motion.div 
                 className="product-line"
+                style={{
+                    backgroundImage: `url(${bgImage?.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
                 animate={{
                     height: hover ? '100%' : null,
                     width: hover ? '100%' : null,

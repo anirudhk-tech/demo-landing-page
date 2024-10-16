@@ -37,7 +37,7 @@ export const NavBar = () => {
                 </motion.text>
             )}
             <div className="chip-container">
-                <Chip label="Contact" className="chip"/>
+                <Chip label="Create" className="chip"/>
                 <Chip label="Shop Now" className="chip"/>
             </div>
             <motion.div
