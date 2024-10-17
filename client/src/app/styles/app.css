@@ -210,13 +210,13 @@
     position: sticky;
     top: 5vh;
     height: 25vh;
-    width: 100vw
+    width: 100vw;
 }
 
 .praise-container {
     position: sticky;
     top: 25vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +231,7 @@
 }
 
 .review-container {
-    width: 43vw;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -352,7 +352,109 @@
 .trusted-by-circle {
     border: 1px solid white;
     border-radius: 150px;
-    width: 15vw;
-    height: 35vh;
+    width: 150px;
+    height: 150px;
     box-shadow: 0px 0px 10px 0px;
+}
+
+
+@media (max-width: 567px) {
+    .fullview {
+        width: 100vw;
+        height: 1500vh;
+    }
+
+    .image-row-container {
+        width: 250vw;
+        align-items: center;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .image-row {
+        width: 100vw;
+        justify-content: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .image-in-row {
+        height: 130px;
+        width: 130px;
+    }
+
+    .chip {
+        font-size: 4vh;
+    }
+
+    .main-title {
+        font-size: 7vh;
+        margin-top: 8vh;
+    }
+
+    .trophy-text {
+        font-size: 5vh;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        margin-left: 100vw;
+        width: 50vw;
+        overflow-y: hidden;
+    }
+
+    .awards-container {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: 600vh;
+        top: 50vh;
+        gap: 200px;
+    }
+
+    .award-bar {
+        overflow-y: hidden;
+    }
+
+    .praise-title {
+        font-size: 5vh;
+    }
+
+    .review-container {
+        width: 80%;
+    }
+
+    .trusted-by-circle-container {
+        width: 100vw;
+        margin-left: auto;
+    }
+
+    .trusted-by-title {
+        margin-left: 350vw;
+        width: 100vw;
+    }
+
+    .trusted-by-circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .products-container {
+        width: 100vw;
+    }
+
+    .product-container {
+        width: 100px;
+    }
+
+    .footer {
+        width: 100vw;
+    }
+
+    .bottom-footer {
+        width: 240vw;
+    }
+
+    .socials-image {
+        width: 100px;
+        height: 100px;
+    }
+    
 }

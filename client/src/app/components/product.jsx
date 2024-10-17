@@ -10,6 +10,7 @@ export const Product = ({ title, bgImage }) => {
             <motion.div 
             className="product-container"
             onHoverStart={() => setHover(true)}
+            onMouseEnter={() => setHover(true)}
             animate={{
                 y: '1px',
             }}
