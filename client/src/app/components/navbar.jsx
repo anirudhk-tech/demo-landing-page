@@ -37,8 +37,8 @@ export const NavBar = () => {
                 </motion.text>
             )}
             <div className="chip-container">
-                <Chip label="Create" className="chip"/>
-                <Chip label="Shop Now" className="chip"/>
+                <Chip label="Create" className="chip" color="white"/>
+                <Chip label="Shop Now" className="chip" color="white"/>
             </div>
             <motion.div
             className="line-bottom"
