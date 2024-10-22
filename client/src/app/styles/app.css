@@ -127,8 +127,7 @@
     color: white !important;
     text-wrap: nowrap !important;
     text-align: center !important;
-    align-self: center !important;
-    margin-left: 1vw !important;
+    margin-top: auto;
 }
 
 .chip-container {

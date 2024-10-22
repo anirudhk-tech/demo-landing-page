@@ -22,20 +22,22 @@ export const NavBar = () => {
             }}
             >
             </motion.div>
-            <Login/>
-            {balance !== null && (
-                <motion.text 
-                className="balance-text"
-                animate={{
-                    opacity: [0, 1, 0, 1],
-                }}
-                transition={{
-                    duration: 2,
-                }}
-                >
-                    Balance: {balance} Wei
-                </motion.text>
-            )}
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+                <Login/>
+                {balance !== null && (
+                    <motion.text 
+                    className="balance-text"
+                    animate={{
+                        opacity: [0, 1, 0, 1],
+                    }}
+                    transition={{
+                        duration: 2,
+                    }}
+                    >
+                        Balance: {balance} Wei
+                    </motion.text>
+                )}
+            </div>
             <div className="chip-container">
                 <Chip label="Create" className="chip" color="white"/>
                 <Chip label="Shop Now" className="chip" color="white"/>
