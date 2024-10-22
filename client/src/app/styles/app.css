@@ -140,11 +140,11 @@
 .chip {
     background-color: white !important;
     color: black !important;
-    align-self: center !important;
-    justify-self: flex-end !important;
+    align-self: center;
+    justify-self: flex-end;
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: 500;
-    border: 1px solid white;
+    border: 1px solid white !important;
     cursor: pointer;
 }
 
