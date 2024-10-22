@@ -140,7 +140,7 @@
 .chip {
     background-color: white !important;
     color: black !important;
-    align-self: center;
+    align-self: center !important;
     justify-self: flex-end;
     font-family: 'Courier New', Courier, monospace !important;
     font-weight: 500;
