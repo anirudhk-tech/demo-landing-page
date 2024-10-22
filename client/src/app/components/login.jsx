@@ -7,7 +7,7 @@ export const Login = () => {
     const { setDialogOpen, connected, setConnected, setBalance } = useContext(DialogContext);
 
     return (
-        <Chip label={ connected === true ? "Logout" : "Login"} className="chip" style={{ marginRight: 'auto', display: 'flex', marginTop: '5%' }} onClick={() => {
+        <Chip label={ connected === true ? "Logout" : "Login"} className="chip" style={{ marginRight: 'auto' }} onClick={() => {
             if (connected) {
                 setConnected(false);
                 setBalance(null);
