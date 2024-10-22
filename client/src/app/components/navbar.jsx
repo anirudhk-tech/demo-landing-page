@@ -27,6 +27,7 @@ export const NavBar = () => {
                 marginLeft: '1vw',
                 marginRight: 'auto',
                 display: 'flex',
+                border: '1px solid white'
             }}>
                 <Login/>
             </div>
