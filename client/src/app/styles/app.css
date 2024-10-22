@@ -11,7 +11,7 @@
     height: 15vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center !important;
     border-color: white !important;
     border-left-width: 0 !important;
     border-right-width: 0 !important;
