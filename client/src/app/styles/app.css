@@ -161,7 +161,7 @@
     width: 40px;
     background-color: white;
     position: absolute;
-    margin-bottom: auto;
+    margin-bottom: 14vh;
 }
 
 .line-bottom {
@@ -169,7 +169,7 @@
     width: 40px;
     background-color: white;
     position: absolute;
-    margin-top: auto;
+    margin-top: 14vh;
     left: 100vw
 }
 
