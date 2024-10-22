@@ -24,10 +24,13 @@ export const NavBar = () => {
             </motion.div>
             <div style={{
                 alignSelf: 'center',
+                alignItems: 'center',
+                justifyContent: 'center',
                 marginLeft: '1vw',
                 marginRight: 'auto',
                 display: 'flex',
-                border: '1px solid white'
+                border: '1px solid white',
+                height: '15vh',
             }}>
                 <Login/>
             </div>
