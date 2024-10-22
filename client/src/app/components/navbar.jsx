@@ -22,7 +22,14 @@ export const NavBar = () => {
             }}
             >
             </motion.div>
-            <Login/>
+            <div style={{
+                alignSelf: 'center',
+                marginLeft: '1vw',
+                marginRight: 'auto',
+                display: 'flex',
+            }}>
+                <Login/>
+            </div>
             {balance !== null && (
                 <motion.text 
                 className="balance-text"
