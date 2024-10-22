@@ -9,7 +9,7 @@ export const NavBar = () => {
     const { balance } = useContext(DialogContext);
 
     return (
-        <AppBar className="navbar" color="transparent">
+        <AppBar className="navbar" color="black">
             <motion.div
             className="line-top"
             animate={{
