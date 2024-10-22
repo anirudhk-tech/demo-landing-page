@@ -37,7 +37,7 @@
 }
 
 .footer-text {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 3vh;
     color: white;
     margin-left: 1vw;
@@ -95,7 +95,7 @@
 
 .dialog-title {
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     color: white;
     border: 1px solid white;
     font-size: 2vh;
@@ -104,7 +104,7 @@
 .dialog-option {
     background-color: white;
     border: 1px solid black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 2vh;
     color: black;
     margin-top: 20px;
@@ -113,13 +113,13 @@
 .dialog-option:hover {
     background-color: black;
     border: 1px solid white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 2vh;
     color: white
 }
 
 .balance-text {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 3vh;
     color: white;
     text-wrap: nowrap;
@@ -140,9 +140,9 @@
 .chip {
     background-color: white !important;
     color: black !important;
-    align-self: center;
-    justify-self: flex-end;
-    font-family: 'Courier New', Courier, monospace;
+    align-self: center !important;
+    justify-self: flex-end !important;
+    font-family: 'Courier New', Courier, monospace !important;
     font-weight: 500;
     border: 1px solid white;
     cursor: pointer;
@@ -180,14 +180,14 @@
 
 .main-title {
     font-size: 10vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     color: white;
 }
 
 .sub-title {
     font-size: 3vh;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .image-in-row {
@@ -227,7 +227,7 @@
 
 .praise-title {
     font-size: 7vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     color: white;
 }
 
@@ -240,7 +240,7 @@
 
 .review-content {
     font-size: 3vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     color: white;
 }
 
@@ -268,7 +268,7 @@
 
 .trophy-text {
     font-size: 5vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     position: absolute;
     margin-left: 120vw;
     width: 50vw;
@@ -295,7 +295,7 @@
 }
 
 .product-title {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 7vh;
     text-align: center;
     margin-top: 45vh;
@@ -310,7 +310,7 @@
 }
 
 .product-caption {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 3vh;
     text-align: center;
 }
@@ -333,7 +333,7 @@
 }
 
 .trusted-by-title {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace !important;
     font-size: 5vh;
     color: white;
 }
