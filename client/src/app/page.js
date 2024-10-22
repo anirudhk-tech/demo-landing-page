@@ -10,7 +10,7 @@ import { Award } from "./components/award.jsx";
 import { Product } from "./components/product.jsx";
 import { useState } from "react";
 import { Button, Dialog, DialogTitle, Typography } from "@mui/material";
-import { Connect } from '../../../server/web3/auth.js';
+import { Connect } from './web3/auth.js';
 import { Trusted } from './components/trusted.jsx';
 import Nature from '../public/images/Image13.jpg';
 import Cute from '../public/images/Image14.png';
