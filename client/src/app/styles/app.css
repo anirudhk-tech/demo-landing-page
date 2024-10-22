@@ -1,6 +1,6 @@
 .fullview {
     width: 100vw;
-    height: 1275vh;
+    height: 1250vh;
     display: flex;
     flex-direction: column;
     scrollbar-width: thin;
