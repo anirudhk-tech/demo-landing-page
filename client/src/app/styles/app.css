@@ -11,13 +11,13 @@
     height: 15vh;
     display: flex;
     flex-direction: row;
-    border-color: white;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
-    border-bottom: 1px;
-    border-style: solid;
-    padding-left: 2vh;
+    border-color: white !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+    border-top-width: 0 !important;
+    border-bottom: 1px !important;
+    border-style: solid !important;
+    padding-left: 2vh !important;
 }
 
 .footer {
