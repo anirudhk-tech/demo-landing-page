@@ -28,6 +28,8 @@
     height: 60vh;
     width: 100vw;
     margin-top: auto;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
 .footer-line {
