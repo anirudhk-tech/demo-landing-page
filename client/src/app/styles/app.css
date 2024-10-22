@@ -138,8 +138,8 @@
 }
 
 .chip {
-    background-color: white;
-    color: black;
+    background-color: white !important;
+    color: black !important;
     align-self: center;
     justify-self: flex-end;
     font-family: 'Courier New', Courier, monospace;
@@ -149,8 +149,8 @@
 }
 
 .chip:hover {
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
 }
 
 .line-top {
