@@ -20,7 +20,7 @@ import Trusted1 from '../public/images/Image18.png';
 import Trusted2 from '../public/images/Image17.png';
 import Trusted3 from '../public/images/Image20.png';
 import Trusted4 from '../public/images/Image19.png';
-import Insta from '../public/images/insta.png';
+import Insta from '../public/images/insta.jpg';
 import X from '../public/images/x.png';
 import Tiktok from '../public/images/tiktok.png';
 import Image from "next/image.js";
