@@ -7,10 +7,10 @@
 }
 
 .navbar {
-    background-color: black;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
+    background-color: black !important;
+    height: 15vh !important;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
     border-color: white !important;
     border-left-width: 0 !important;
